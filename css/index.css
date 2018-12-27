@@ -1,0 +1,102 @@
+/*
+    同样样式
+*/
+/*********************字体************************************/
+@font-face {
+    font-family: myfont;
+    src: url('../fonts/lk.eot') format('embedded-opentype'),
+    url('../fonts/lk.svg') format('svg'),
+    url('../fonts/lk.ttf') format('truetype'),
+    url('../fonts/lk.woff') format('woff');
+}
+[class^="icon-"],
+[class*=" icon-"]{
+    font-family: myfont;
+    font-style: normal;
+}
+
+/**********************通用栏按钮bootstrap插件******************************************/
+
+.btn-register {
+    color: #FFFFFF;
+    background-color: #0AB4F7;
+    border-color: #F4F7F7;
+}
+
+.btn-register:hover,
+.btn-register:focus,
+.btn-register:active,
+.btn-register.active,
+.open .dropdown-toggle.btn-register {
+    color: #FFFFFF;
+    background-color: #086DF2;
+    border-color: #F4F7F7;
+}
+
+.btn-register:active,
+.btn-register.active,
+.open .dropdown-toggle.btn-register {
+    background-image: none;
+}
+
+.btn-register.disabled,
+.btn-register[disabled],
+fieldset[disabled] .btn-register,
+.btn-register.disabled:hover,
+.btn-register[disabled]:hover,
+fieldset[disabled] .btn-register:hover,
+.btn-register.disabled:focus,
+.btn-register[disabled]:focus,
+fieldset[disabled] .btn-register:focus,
+.btn-register.disabled:active,
+.btn-register[disabled]:active,
+fieldset[disabled] .btn-register:active,
+.btn-register.disabled.active,
+.btn-register[disabled].active,
+fieldset[disabled] .btn-register.active {
+    background-color: #0AB4F7;
+    border-color: #F4F7F7;
+}
+
+.btn-register .badge {
+    color: #0AB4F7;
+    background-color: #FFFFFF;
+}
+
+
+/*********************通用栏格样式*****************************/
+#wd_header .top_bar{
+    border-bottom: 1px solid #e0e0e0;
+    height: 40px;
+    line-height: 39px;
+}
+
+#wd_header .top_bar .container .row>div+div{   
+    border-left: 1px solid #e0e0e0;
+}
+#wd_header .top_bar .container .row .top_bar_1 a{
+    text-decoration:none;
+    position: relative;
+}
+#wd_header .top_bar .container .row .top_bar_1 a img{
+    display: none;
+    position: absolute;
+    left: 50%;
+    margin-left: -65px;
+    margin-top: -10px;
+    z-index: 999;
+
+}
+
+#wd_header .top_bar .container .row .top_bar_1 a:hover img{
+    display:block;
+}
+
+.icon-phone::before{
+    content:'\e958';
+    font-size: 13px;
+}
+.icon-tel::before{
+    content:"\e942";
+    font-size: 13px;
+}
