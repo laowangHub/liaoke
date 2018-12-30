@@ -84,8 +84,7 @@ fieldset[disabled] .btn-register.active {
     left: 50%;
     margin-left: -65px;
     margin-top: -10px;
-    z-index: 999;
-
+    z-index: 9999;
 }
 
 #wd_header .top_bar .container .row .top_bar_1 a:hover img{
@@ -100,3 +99,39 @@ fieldset[disabled] .btn-register.active {
     content:"\e942";
     font-size: 13px;
 }
+/*****************************导航**************************************/
+#wd_header .navbar-wd{
+    background-color: #fff;
+    margin-bottom: 4px;
+
+}
+#wd_header .navbar-wd .navbar-brand{
+    height: 70px;
+    padding: 5px 15px;
+}
+#wd_header .navbar-wd li a{
+    height: 70px;
+    line-height: 40px;
+}
+
+#wd_header .navbar-wd li.active a,
+#wd_header .navbar-wd li a:hover{
+    border-bottom: 2px solid #0AB4F7;
+    background-color:transparent;
+}
+#wd_header .navbar-wd  .navbar-toggle{
+    margin-top: 18px;
+}
+
+/*******************轮播图******************************/
+#wd_carousel .item{
+    background: no-repeat center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+@media screen  and (min-width: 800px){
+    #wd_carousel .item{
+          height: 410px;
+    }
+}
+/********************轮播图************************************/
